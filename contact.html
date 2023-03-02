@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html" id="Pra"><h1>PrabhatS</h1></a>
+		<div class="nav-links" id="nav-links">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="main.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="course.html">COURSE</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Contact Us</h1>
+</section>
+<!----------------Contact US--------------->
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230660.99610611217!2d81.66149884934819!3d25.4021973904255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1668055887646!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact--us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>651 Niruappa</h5>
+					<p>Bangalore, Karnataka,</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>+91 9336856213</h5>
+					<p>Mon to Sat, 10AM to 5PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>jjjaa@gmail.com</h5>
+					<p>Mon to Sat, 10AM to 5PM</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+			<form action="contact.html" method="post">
+				<input type="text" name="name" placeholder="Enter Your Name" required>
+				<input type="email" name="email" placeholder="Enter Your Email" required>
+				<input type="text" name="subject" placeholder="Enter Your Subject" required>
+				<textarea rows="8" name="message" placeholder="Write Message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Message</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+
+<!----------------Footer------------------->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery on the Home tab. <br>You can also format text directly by using the other controls on the Home tab. </p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by PrabhatS </p>
+</section>
+
+<!---------------------JavaScript------------------->
+<script type="text/javascript">
+	var navlinks = document.getElementById('navlinks');
+
+	function showMenu() {
+		navlinks.style.right = "0";
+	}
+		function hideMenu() {
+		navlinks.style.right = "-200px";
+	}
+</script>	
+</body>
+</html>
